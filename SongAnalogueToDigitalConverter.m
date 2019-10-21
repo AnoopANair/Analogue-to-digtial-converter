@@ -32,8 +32,8 @@ disp("mean")
 disp(u);
 %plot the crossing in red
 z=u*ones(1,L);
-% plot(z,'r');
-% hold on;
+plot(z,'r');
+hold on;
 
 % fnd the absolute maximum of the array values
 
@@ -44,10 +44,10 @@ disp(mx);
 % plot the two extreme limits
 amx=mx*ones(1,L);
 amx1=(-1)*mx*ones(2,L);
-% plot(amx);
-% hold on;
-% plot(amx1);
-% hold on;
+plot(amx);
+hold on;
+plot(amx1);
+hold on;
 
 % enter the level of required quantization
 QN=input("enter level of qunatization");
@@ -65,11 +65,11 @@ limit= QN+1;
 for i = 1:QN
         Lw(i)=(i)*quanta;
         lines= Lw(i)*ones(1,L);
-%         plot(lines,'b');
-%         hold on;
+        plot(lines,'b');
+        hold on;
         lines1= (-1)*Lw(i)*ones(1,L);
-%         plot(lines1,'b');
-%         hold on;
+        plot(lines1,'b');
+        hold on;
        
 end
 disp(Lw);
@@ -133,11 +133,11 @@ limit1= QN1+1;
 for i = 1:QN1
         Lw1(i)=(i)*quanta1;
         l1ines= Lw1(i)*ones(1,L);
-%         plot(l1ines,'b');
-%         hold on;
+        plot(l1ines,'b');
+        hold on;
         l1ines1= (-1)*Lw1(i)*ones(1,L);
-%         plot(l1ines1,'b');
-%         hold on;
+        plot(l1ines1,'b');
+        hold on;
        
 end
 disp(Lw1);
